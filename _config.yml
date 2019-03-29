@@ -8,7 +8,12 @@ url: "https://tranhl.github.io"
 date_format: "%b %-d, %Y"
 permalink: /blog/:year/:month/:day/:categories/:title
 
-highlighter: none # We use highlight.js instead for more customizability.
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    disable: true # We use highlight.js instead of rouge for more customizability.
+
 plugins:
   - jekyll-paginate
 
