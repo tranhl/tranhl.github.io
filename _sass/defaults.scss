@@ -59,13 +59,8 @@ a:not(.no-underline) {
   }
 }
 
-.highlight {
-  margin-left: 0;
-  margin-right: 0;
-
-  code {
-    padding: 1rem;
-  }
+.hljs {
+  padding: 1rem;
 }
 
 code:not(.hljs) {
