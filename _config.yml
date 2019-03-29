@@ -12,8 +12,9 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter_opts:
-    disable: true # We use highlight.js instead of rouge for more customizability.
+    disable: true
 
+highlighter: none # We use highlight.js instead for more customizability.
 plugins:
   - jekyll-paginate
 
