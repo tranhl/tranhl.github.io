@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <div class="content">
+      {% include header.html %}
+      {{ content }}
+      {% include footer.html %}
+    </div>
+  </body>
+</html>

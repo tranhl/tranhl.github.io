@@ -1,0 +1,29 @@
+---
+layout: default
+show_subtitle: true
+---
+
+{% for post in paginator.posts %}
+
+  {% assign minutes = post.content | number_of_words | divided_by: 180 %}
+
+  {% if minutes == 0 %}
+    {% assign read-time = "Less than a minute read" %}
+  {% else %}
+    {% assign read-time = minutes | append: "&nbsp;" | append: "min read" %}
+  {% endif %}
+
+  <article class="article-item">
+    <h2><a href="{{ post.url | prepend: site.baseurl }}" class="no-underline">{{ post.title }}</a></h2>
+    <span class="meta">{{ post.date | date: site.date_format }} • {{ read-time }}</span>
+
+    <p>
+      {% if post.summary %}
+        {{ post.summary }}
+      {% else %}
+        {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+      {% endif %}
+    </p>
+  </article>
+
+{% endfor %}

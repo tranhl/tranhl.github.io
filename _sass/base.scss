@@ -1,0 +1,202 @@
+@import "variables";
+@import "mixins";
+@import "defaults";
+
+body {
+  // Required to ensure footer is always located at the bottom of the page.
+  position: relative;
+  min-height: 100%;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 2.3rem 1rem 6.6rem 1rem;
+  max-width: 700px;
+
+  @media screen and (min-width: $screen-breakpoint) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  & > :first-child {
+    margin-top: 0;
+  }
+}
+
+.header {
+  margin-bottom: 2.4rem;
+
+  .subtitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2rem 0;
+
+    @media screen and (min-width: $screen-breakpoint) {
+      justify-content: center;
+    }
+
+    .avatar {
+      width: 4rem;
+      height: 4rem;
+      margin-right: 1rem;
+
+      border-radius: 50%;
+    }
+
+    p {
+      width: 12rem;
+      margin: 0;
+      font-family: $font-family-sans-serif;
+      font-weight: 300;
+      font-size: 0.85rem;
+      line-height: 1.4rem;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    line-height: 0;
+    text-decoration: none;
+    color: $font-color-default;
+
+    &:hover {
+      background-color: inherit;
+    }
+
+    &:visited {
+      color: $font-color-default;
+    }
+  }
+
+  .site-home {
+    flex: 1;
+    margin: 0;
+
+    h1 {
+      display: inline;
+      font-family: $font-family-sans-serif;
+      line-height: 1.5rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 0.08rem;
+      text-transform: uppercase;
+      word-spacing: 99999999px;
+
+      @include underline(0.4rem, 0rem, $font-color-primary);
+
+    }
+  }
+
+  .archive {
+    display: inline-block;
+
+    span {
+      margin: 0;
+      font-family: $font-family-sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+  }
+
+  .github-icon {
+    display: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 0.8rem;
+    padding: 0;
+
+    @media screen and (min-width: $screen-breakpoint) {
+      display: inline-block;
+    }
+
+    img {
+      height: 100%;
+    }
+  }
+}
+
+article {
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  margin: 2.5rem 0;
+
+  h2 {
+    margin: 0;
+
+    a {
+      text-decoration: none;
+      color: $font-color-default;
+
+      &:hover, &:active {
+        color: $font-color-primary;
+      }
+    }
+  }
+
+  p {
+    margin-top: 0.7rem;
+  }
+}
+
+.meta {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: $font-color-light;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  padding: 1rem;
+  font-size: 0.8rem;
+
+  color: $font-color-code-foreground;
+  background-color: $font-color-code-background;
+  text-align: center;
+
+  p {
+    margin: 0;
+    line-height: 1.2rem;
+
+    a {
+      color: $font-color-primary;
+    }
+  }
+}
+
+.archive-list {
+  padding-left: 0rem;
+
+  li {
+    line-height: 1.8rem;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

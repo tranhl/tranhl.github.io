@@ -1,0 +1,18 @@
+---
+layout: default
+show-subtitle: false
+---
+
+{% assign minutes = content | number_of_words | divided_by: 180 %}
+
+{% if minutes == 0 %}
+  {% assign read_time = "Less than a minute read" %}
+{% else %}
+  {% assign read_time = minutes | append: "&nbsp;" | append: "min read" %}
+{% endif %}
+
+<article>
+	<h2>{{ page.title }}</h2>
+  <span class="meta">{{ page.date | date: site.date_format }} • {{ read_time }}</span>
+  {{ content }}
+</article>

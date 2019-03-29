@@ -1,0 +1,21 @@
+title: Continuous Improvement
+author: Long Hoang Tran
+email: tranhl@gmx.com
+description: >-
+  Long Hoang Tran's personal blog. Software, life, and everything in-between.
+baseurl: "" # Intentionally set to ""
+url: "https://tranhl.github.io"
+date_format: "%b %-d, %Y"
+permalink: /blog/:year/:month/:day/:categories/:title
+
+highlighter: none # We use highlight.js instead for more customizability.
+plugins:
+  - jekyll-paginate
+
+paginate: 8
+paginate_path: "/page-:num"
+
+exclude: [vendor]
+sass:
+  sass_dir: _sass
+  style: compressed
