@@ -13,6 +13,6 @@ show-subtitle: false
 
 <article>
 	<h2>{{ page.title }}</h2>
-  <span class="meta">{{ page.date | date: site.date_format }} • {{ read_time }}</span>
+  <span class="meta">{{ site.author }} • {{ page.date | date: site.date_format }} • {{ read_time }}</span>
   {{ content }}
 </article>

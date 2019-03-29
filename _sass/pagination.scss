@@ -1,0 +1,17 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.5rem;
+
+  a:visited {
+    color: $font-color-default;
+  }
+
+  .newer {
+    margin-right: auto;
+  }
+
+  .older {
+    margin-left: auto;
+  }
+}

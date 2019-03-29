@@ -1,20 +1,13 @@
-<div class="pagination clearfix">
-  <div class="left">
-    {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
-        <a href="{{ site.baseurl }}/">‹ {{ site.var_newer }}</a>
-      {% else %}
-        <a href="{{ site.baseurl }}/page-{{paginator.previous_page}}/">‹ {{ site.var_newer }}</a>
-      {% endif %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a href="{{ site.baseurl }}/" class="newer">&larr; Newer</a>
     {% else %}
-      <span class="disabled">‹ {{ site.var_newer }}</span>
+      <a href="{{ site.baseurl }}/page-{{paginator.previous_page}}/">&larr; Newer</a>
     {% endif %}
-  </div>
-  <div class="right">
-    {% if paginator.next_page %}
-      <a href="{{ site.baseurl }}/page-{{paginator.next_page}}/">{{ site.var_older }} ›</a>
-    {% else %}
-      <span class="disabled">{{ site.var_older }} ›</span>
-    {% endif %}
-  </div>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <a href="{{ site.baseurl }}/page-{{paginator.next_page}}/" class="older">Older &rarr;</a>
+  {% endif %}
 </div>
