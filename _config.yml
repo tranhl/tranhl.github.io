@@ -10,16 +10,15 @@ permalink: /blog/:year/:month/:day/:categories/:title
 
 markdown: kramdown
 kramdown:
-  input: GFM
+  input: kramdown
   syntax_highlighter_opts:
-    disable: true
+    disable: true # Disable rouge highlighter in favour of Prism.js
 
-highlighter: none # We use highlight.js instead for more customizability.
 plugins:
   - jekyll-autoprefixer
   - jekyll-paginate
 
-paginate: 4
+paginate: 8
 paginate_path: "/page-:num"
 
 exclude: [vendor]
