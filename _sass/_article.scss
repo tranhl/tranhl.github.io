@@ -1,0 +1,47 @@
+.post-list, .post {
+  h2 {
+    margin: 0;
+  }
+}
+
+.meta {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: $font-color-light;
+  line-height: 1.15rem;
+}
+
+.post-list {
+  article {
+    margin: 2.5rem 0;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    a {
+      margin: 0;
+      text-decoration: none;
+      color: $font-color-default;
+
+      &:hover, &:active {
+        color: $font-color-primary;
+      }
+    }
+
+    p {
+      margin-top: 0.7rem;
+    }
+  }
+}
+
+.post {
+  h2 {
+    margin-bottom: 0.25rem;
+  }
+}

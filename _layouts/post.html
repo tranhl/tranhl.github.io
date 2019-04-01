@@ -11,7 +11,7 @@ show-subtitle: false
   {% assign read_time = minutes | append: "&nbsp;" | append: "min read" %}
 {% endif %}
 
-<article>
+<article class="post">
 	<h2>{{ page.title }}</h2>
   <span class="meta">{{ site.author }} • {{ page.date | date: site.date_format }} • {{ read_time }}</span>
   {{ content }}
