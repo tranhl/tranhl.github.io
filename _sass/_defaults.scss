@@ -64,12 +64,12 @@ code, pre {
   font-family: $font-family-monospace;
   font-size: 0.9rem;
   border-radius: 0.25rem;
-  line-height: 1.4rem;
+  line-height: 1;
   z-index: 1;
 }
 
 code:not([class*="language-"]) {
-  padding: 0.1rem 0.25rem;
+  padding: 0 0.3rem 0.15rem 0.3rem;
   color: $font-color-code-foreground;
   background-color: $font-color-code-background;
 }
