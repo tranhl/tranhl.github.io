@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What the GitHub Repository Experience Is Missing - And What To Do About It
+title: What the GitHub Repository Experience Is Missing - and How to Fix It
 summary: File browsing. It’s missing file browsing.
 category: tooling
 tag: browser extension
