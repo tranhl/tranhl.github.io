@@ -3,9 +3,10 @@
 
 <title>
   {% if page.title %}
-  {{ page.title }} •
-  {% endif %}
+  {{ page.title }} • {{ site.title }}
+  {% else %}
   {{ site.title }} • Long Hoang Tran's personal blog
+  {% endif %}
 </title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
