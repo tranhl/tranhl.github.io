@@ -6,7 +6,7 @@ description: >-
 baseurl: "" # Intentionally set to ""
 url: "https://tranhl.github.io"
 date_format: "%b %-d, %Y"
-permalink: /blog/:year/:month/:day/:categories/:title
+permalink: /:categories/:title
 
 markdown: kramdown
 kramdown:
