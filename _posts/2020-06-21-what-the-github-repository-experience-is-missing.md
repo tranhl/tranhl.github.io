@@ -29,7 +29,7 @@ Thankfully there are a couple of browser extensions available that directly addr
   alt="Tako extension preview"
 %}
 
-First up is [Tako](https://github.com/brumm/tako), the simplest option available. This extension replaces the default file browser on GitHub with an IDE-like browser, and is available on Chrome and Firefox. Files on the left, file preview on the right. 
+First up is [Tako](https://github.com/brumm/tako), the simplest option available. This extension replaces the default file browser on GitHub with an IDE-like browser, and is available on Chrome and Firefox. Files on the left, file preview on the right.
 
 ## Octotree
 
@@ -39,9 +39,9 @@ First up is [Tako](https://github.com/brumm/tako), the simplest option available
   alt="Octotree extension preview"
 %}
 
-[Octotree](https://github.com/ovity/octotree) is the most feature-packed of the bunch. Available on Chrome, Firefox, Opera, and Safari, Octotree's main feature is a detachable sidebar for browsing files and jumping to files while performing code reviews. Take note though, the code review features are locked behind a [subscription](https://www.octotree.io/pricing).
+[Octotree](https://github.com/ovity/octotree) is the most customizable of the bunch — dark themes, support for multiple tabs, adjustable dock position, and more. It's available on Chrome, Firefox, Opera, and Safari, so if you use Opera or Safari, it's your only option. Take note though, some of its features are locked behind a [subscription](https://www.octotree.io/pricing).
 
-If you're someone that does most of their code reviews using GitHub's interface, and doesn't mind the subscription, then this is the extension for you.
+If you're heavily invested into GitHub, and want the most out of your time, then Octotree is the way to go.
 
 ## Gitako
 
@@ -51,12 +51,12 @@ If you're someone that does most of their code reviews using GitHub's interface,
   alt="Gitako extension preview"
 %}
 
-[Gitako](https://github.com/EnixCoda/Gitako) provides a similar experience to Octotree, available on Chrome, Firefox, and Edge. If you aren't interested in the code review enhancements that Octotree providers, and just want the file browser experience, then Gitako is probably the way to go, as it performs faster than Octotree.
+[Gitako](https://github.com/EnixCoda/Gitako) provides a similar experience to Octotree, available on Chrome, Firefox, and Edge. If you aren't interested in the additional features that Octotree provides, and just want the core file browser experience, then Gitako is probably the way to go.
 
 ## Closing Thoughts
 
 With everything I've said about the lackluster file browsing experience, it's important to acknowledge that maintaining an IDE-like experience is not GitHub's primary concern. Links to files on GitHub are shared across the web all the time. Ensuring that the links work 100% of the time (given that GitHub is accessible), is the top priority. A fancy file browsing experience would complicate things significantly.
 
-Personally, I prefer Tako. It's feature packed enough while still maintaining the familiar GitHub layout. I use VSCode with the [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) extension to do code reviews, so Octotree and Gitako are less attractive to me.
+Personally, I prefer Gitako. Octotree's pricing is not very attractive for me, as I use GitHub mainly to perform code reviews. Gitako offer's the core features that Octotree is known for, and is pretty fast.
 
 At the end of the day, it comes down to personal preference, so choose whatever works best for your workflow.
