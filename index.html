@@ -17,7 +17,9 @@ show_subtitle: true
 
     <li>
       <article>
-        <a href="{{ post.url | prepend: site.baseurl }}" class="no-underline"><h2>{{ post.title }}</h2></a>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="no-underline">
+          <h1>{{ post.title }}</h1>
+        </a>
         <span class="meta">{{ post.date | date: site.date_format }} • {{ read-time }}</span>
 
         <p>
