@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started With Google Analytics
-summary: The guide I wish I had when starting with Google Analytics.
+summary: Sharing my learnings with setting up and integrating Google Analytics for this blog.
 category: guides
 ---
 
@@ -25,7 +25,7 @@ Each property has an associated tracking code, and it's this tracking code that 
 
 ### Accounts
 
-During the on-boarding process, one of the first things you'll be prompted to create is an ***Account.*** For me, this was confusing, as when I read 'account', I think *e-mail account*. However, on Google Analytics, accounts are more akin to financial accounts. They are simply a way to aggregate and organise data from multiple Properties, as well as access to that data (in case you work with multiple people).
+During the on-boarding process, one of the first things you'll be prompted to create is an ***Account***. For me, this was confusing, as when I read 'account', I think *e-mail account*. However, on Google Analytics, accounts are more akin to financial accounts. They are simply a way to aggregate and organise data from multiple Properties, as well as access to that data (in case you work with multiple people).
 
 Accounts are flexible and configurable. You may want to only include data from a single Property in an account, such as data from your personal blog. At other times, when you have a lot of data to work with, you may wish to aggregate data from multiple blogs, websites, and apps, all into a single account to generate analytics across the board. Or, you may wish to create an account to allow special access to more sensitive data. Ultimately, how you organise your Properties will come down to what you want to understand from your traffic data, and the surrounding use cases.
 

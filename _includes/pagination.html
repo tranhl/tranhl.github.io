@@ -1,7 +1,7 @@
 <nav class="pagination">
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a href="{{ site.baseurl }}" class="newer">&larr; Newer</a>
+      <a href="/" class="newer">&larr; Newer</a>
     {% else %}
       <a href="{{ site.baseurl }}/page-{{paginator.previous_page}}">&larr; Newer</a>
     {% endif %}

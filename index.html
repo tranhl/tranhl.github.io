@@ -29,6 +29,10 @@ show_subtitle: true
               {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
             {% endif %}
           </p>
+
+          <a href="{{ post.url | prepend: site.baseurl }}" class="read-article">
+            Read article &rarr;
+          </a>
         </article>
       </li>
 

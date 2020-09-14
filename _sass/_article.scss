@@ -28,8 +28,7 @@ $post-spacing: 2.5rem;
         }
 
         p {
-          margin: 0;
-          margin-top: 6px;
+          margin: 4px 0 5px;
         }
       }
     }
@@ -83,8 +82,20 @@ $post-spacing: 2.5rem;
 
 .meta, .post-meta {
   font-size: 0.9rem;
-  font-weight: 400;
+  font-weight: 300;
   font-family: $font-family-sans-serif;
   color: $font-color-light;
   line-height: 1rem;
+}
+
+.read-article {
+  font-size: 0.9rem;
+
+  &:visited {
+    color: $font-color-default !important;
+
+    &:hover {
+      color: white !important;
+    }
+  }
 }
