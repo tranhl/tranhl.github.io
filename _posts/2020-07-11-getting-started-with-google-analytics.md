@@ -146,4 +146,4 @@ If your property has conversion targets, then conversion reports allow you to un
 
 ## Closing Thoughts
 
-If you've made it to the end of this blog post, thank you! I hope that I've helped dispel any confusion that you may have had setting up Google Analytics on your own platform. If you have any questions feel free to reach out, I'm always a [Tweet](https://twitter.com/loooongtran) away!
+If you've made it to the end of this blog post, thank you! I hope that I've helped dispel any confusion that you may have had setting up Google Analytics on your own platform. If you have any questions feel free to reach out, I'm always a [Tweet](https://twitter.com/tranhl_) away!
