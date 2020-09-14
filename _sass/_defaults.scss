@@ -93,13 +93,15 @@ a:not(.no-underline) {
 
 code, pre {
   font-family: $font-family-monospace;
+  font-size: 12.5px;
   border-radius: 0.25rem;
-  line-height: 1;
+  line-height: 1.25;
   z-index: 1;
 }
 
 code:not([class*="language-"]) {
   padding: 0 0.3rem;
+  font-size: inherit;
   color: $font-color-code-foreground;
   background-color: $font-color-code-background;
 }
