@@ -13,6 +13,15 @@ show-subtitle: false
 
 <article class="post">
 	<h1>{{ page.title }}</h1>
-  <span class="meta">{{ site.author }} • {{ page.date | date: site.date_format }} • {{ read_time }}</span>
+
+  <div class="author">
+    <img src="/assets/img/avatar.jpg" alt="Author's avatar" class="avatar" />
+
+    <div class="post-meta">
+      <span>{{ read_time }} • {{ page.date | date: site.date_format }}</span>
+      <span>by {{ site.author }}</span>
+    </div>
+  </div>
+
   {{ content }}
 </article>

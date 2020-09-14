@@ -1,51 +1,51 @@
-.post-list, .post {
-  h1 {
-    margin: 0;
-  }
-}
+$post-spacing: 2.5rem;
 
-.meta {
+.posts {
   display: inline-block;
-  font-size: 0.8rem;
-  font-weight: 300;
-  font-family: $font-family-sans-serif;
-  color: $font-color-light;
-  line-height: 1.15rem;
-}
 
-.post-list {
-  article {
-    margin: 2.5rem 0;
+  ul {
+    margin: 0;
+    margin-top: -$post-spacing;
 
-    &:first-of-type {
-      margin-top: 0;
-    }
+    li {
+      margin-top: $post-spacing;
+      border: 1px solid transparent;
 
-    &:last-of-type {
-      margin-bottom: 0;
-    }
+      article {
+        a {
+          margin: 0;
+          text-decoration: none;
+          color: $font-color-default;
 
-    a {
-      margin: 0;
-      text-decoration: none;
-      color: $font-color-default;
+          &:hover, &:active {
+            color: $font-color-primary;
+          }
 
-      &:hover, &:active {
-        color: $font-color-primary;
+          h1 {
+            font-size: 1.8rem;
+            margin-bottom: 4px;
+          }
+        }
+
+        p {
+          margin: 0;
+          margin-top: 6px;
+        }
       }
-    }
-
-    p {
-      margin-top: 0.7rem;
     }
   }
 }
 
 .post {
+  margin-top: 4rem;
   padding-bottom: 3em;
 
+  h2, h3, h4, h5, h6, figure {
+    margin: 2.75rem 0 1.05rem;
+  }
+
   h1 {
-    margin-bottom: 0.25rem;
+    margin-bottom: 16px;
   }
 
   img {
@@ -55,5 +55,36 @@
   ul {
     list-style: disc;
     padding-left: 2rem;
+
+    li {
+      line-height: 1.35;
+    }
   }
+
+  .author {
+    display: flex;
+    flex-direction: row;
+
+    .avatar {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        line-height: 1.2rem;
+      }
+    }
+  }
+}
+
+.meta, .post-meta {
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: $font-family-sans-serif;
+  color: $font-color-light;
+  line-height: 1rem;
 }

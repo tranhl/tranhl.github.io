@@ -27,35 +27,38 @@ body {
 }
 
 .header {
+  display: block;
   margin-bottom: 2.4rem;
+}
 
-  .subtitle {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 2rem 0;
+.subtitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2rem 0;
 
-    @media screen and (min-width: $screen-breakpoint) {
-      justify-content: center;
-    }
-
-    .avatar {
-      width: 4rem;
-      height: 4rem;
-      margin-right: 1rem;
-
-      border-radius: 50%;
-    }
-
-    p {
-      width: 12rem;
-      margin: 0;
-      font-family: $font-family-sans-serif;
-      font-weight: 300;
-      font-size: 0.85rem;
-      line-height: 1.4rem;
-    }
+  @media screen and (min-width: $screen-breakpoint) {
+    justify-content: center;
   }
+
+  p {
+    width: 12rem;
+    margin: 0;
+    font-family: $font-family-sans-serif;
+    font-weight: 400;
+    font-size: 0.85rem;
+    line-height: 1.4rem;
+  }
+}
+
+.avatar {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+
+  border-radius: 50%;
+
+  background-color: lightgrey;
 }
 
 .nav {
@@ -84,7 +87,7 @@ body {
 
     span {
       display: inline;
-      font-family: $font-family-sans-serif;
+      font-family: $font-family-brand;
       line-height: 1.5rem;
       font-size: 1.6rem;
       font-weight: 700;
