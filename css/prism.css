@@ -9,7 +9,7 @@ https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javasc
 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: #D8D0BF;
+	color: #F1F1F1;
 	background: none;
 	text-align: left;
 	white-space: pre;
@@ -96,7 +96,7 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-	color: #A39A89;
+	color: #F1F1F1;
 }
 
 .token.operator,
@@ -104,18 +104,18 @@ pre[class*="language-"] {
 .token.url,
 .language-css .token.string,
 .style .token.string {
-	color: #A39A89;
+	color: #E3BC2D;
 }
 
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-	color: #D15E60;
+	color: #d65154;
 }
 
 .token.function,
 .token.class-name {
-	color: #7C94A8;
+	color: #65a5d9;
 }
 
 .token.regex,

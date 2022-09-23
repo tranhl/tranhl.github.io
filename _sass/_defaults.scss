@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -46,7 +46,7 @@ h6 {
 }
 
 p {
-  line-height: 1.8rem;
+  line-height: 2rem;
 }
 
 ul {
@@ -101,7 +101,7 @@ code, pre {
 
 code:not([class*="language-"]) {
   padding: 0 0.3rem;
-  font-size: inherit;
+  font-size: 0.9em;
   color: $font-color-code-foreground;
   background-color: $font-color-code-background;
 }
@@ -117,6 +117,8 @@ code[class*="language-"] {
   display: inline-block;
   min-width: 100%;
   line-height: inherit;
+  font-size: 0.95rem;
+  line-height: 2rem;
 }
 
 .line-highlight {
