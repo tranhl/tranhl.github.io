@@ -3,9 +3,9 @@
 
 <title>
   {% if page.title %}
-  {{ page.title }} • {{ site.title }}
+    {{ page.title | strip_html }} • {{ site.title }}
   {% else %}
-  {{ site.title }} • Array&lt;Thoughts | Ideas&gt;
+    {{ site.title }} • Array&lt;Thoughts | Ideas&gt;
   {% endif %}
 </title>
 
