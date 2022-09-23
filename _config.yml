@@ -1,8 +1,6 @@
-title: CIFL
-author: Long Hoang Tran
+title: tranhl.me
+author: Long Tran
 email: tranhl@gmx.com
-description: >-
-  Long Hoang Tran's personal blog. Life, software, and everything in-between.
 baseurl: "" # Intentionally set to ""
 url: "https://tranhl.github.io"
 date_format: "%b %-d, %Y"

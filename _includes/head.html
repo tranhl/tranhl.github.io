@@ -5,7 +5,7 @@
   {% if page.title %}
   {{ page.title }} • {{ site.title }}
   {% else %}
-  {{ site.title }} • Long Hoang Tran's personal blog
+  {{ site.title }} • Array&lt;Thoughts | Ideas&gt;
   {% endif %}
 </title>
 
@@ -13,13 +13,3 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css?{{ site.time | date: '%s%N' }}">
 <link rel="shortcut icon" href="/assets/img/favicon.png?{{ site.time | date: '%s%N' }}" type="image/x-icon">
 <script src="{{ site.baseurl }}/js/prism.js"></script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171055258-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-
-  gtag('config', 'UA-171055258-1');
-</script>

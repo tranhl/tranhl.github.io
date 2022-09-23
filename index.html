@@ -24,9 +24,7 @@ show_subtitle: true
 
           <p>
             {% if post.summary %}
-              {{ post.summary }}
-            {% else %}
-              {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+              {{ post.summary }}  
             {% endif %}
           </p>
 

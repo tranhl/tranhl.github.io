@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 title: Getting Started With Google Analytics
 summary: Sharing my learnings with setting up and integrating Google Analytics for this blog.

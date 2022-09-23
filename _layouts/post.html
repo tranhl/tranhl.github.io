@@ -3,19 +3,15 @@ layout: default
 show-subtitle: false
 ---
 
-{% assign minutes = content | number_of_words | divided_by: 180 %}
-
-{% if minutes == 0 %}
-  {% assign read_time = "Less than a minute read" %}
-{% else %}
-  {% assign read_time = minutes | append: "&nbsp;" | append: "min read" %}
-{% endif %}
+{% assign minutes = content | number_of_words | divided_by: 180 %} {% if minutes
+== 0 %} {% assign read_time = "Less than a minute read" %} {% else %} {% assign
+read_time = minutes | append: "&nbsp;" | append: "min read" %} {% endif %}
 
 <article class="post">
-	<h1>{{ page.title }}</h1>
+  <h1>{{ page.title }}</h1>
 
   <div class="author">
-    <img src="/assets/img/avatar.jpg" alt="Author's avatar" class="avatar" />
+    <img src="/assets/svg/avatar.svg" alt="Author's avatar" class="avatar" />
 
     <div class="post-meta">
       <span>{{ read_time }} • {{ page.date | date: site.date_format }}</span>
