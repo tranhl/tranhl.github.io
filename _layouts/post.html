@@ -8,16 +8,18 @@ show-subtitle: false
 read_time = minutes | append: "&nbsp;" | append: "min read" %} {% endif %}
 
 <article class="post">
-  <h1>{{ page.title }}</h1>
+  <section class="post-header">
+    <h1>{{ page.title }}</h1>
 
-  <div class="author">
-    <img src="/assets/svg/avatar.svg" alt="Author's avatar" class="avatar" />
+    <div class="author">
+      <img src="/assets/svg/avatar.svg" alt="Author's avatar" class="avatar" />
 
-    <div class="post-meta">
-      <span>{{ read_time }} • {{ page.date | date: site.date_format }}</span>
-      <span>by {{ site.author }}</span>
+      <div class="post-meta">
+        <span>{{ read_time }} • {{ page.date | date: site.date_format }}</span>
+        <span>by {{ site.author }}</span>
+      </div>
     </div>
-  </div>
+  </section>
 
-  {{ content }}
+  <section class="post-content">{{ content }}</section>
 </article>
