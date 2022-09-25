@@ -46,6 +46,7 @@ type Awaited<T> = T extends Promise<infer U>
 type Input = Promise<string>
 type Output = Awaited<Input> // Will always be of type `string`
 ~~~
+[Open in Playground](https://www.typescriptlang.org/play?#code/C4TwDgpgBAgg7gQwJbAgEwDwBUB8UC8UWUEAHqgHZoDOUACgE4D2AtktRBkhQGYQNQAqjgBQUKAH4hYqAC4iIkaEhQAkhTABXYAXrM2HDNWANuAc1HLoAeW1adheMlSZ19nEA)
 
 Let's unpack what's happening here. `Awaited` is a generic type that accepts a single
 type parameter `T`. In the guts, we use a conditional type to check if `T`
