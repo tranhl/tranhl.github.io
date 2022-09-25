@@ -54,3 +54,7 @@ is of type `Promise` or not. If it is not, we simply return `T`. Because we want
 unwrap the type inside of `Promise`, we use `infer U` to instruct TypeScript to infer
 the type and store it in the type variable `U`, which we then return in the truthy
 path of the conditional type.
+
+## Additional Resources
+
+- [Inferring Within Conditional Types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#inferring-within-conditional-types)
