@@ -22,7 +22,7 @@ type PassThrough = OnlyStrings<{ foo: "bar" }>;
 In this example, we can see that if we supply a union type to the generic of
 `OnlyStrings`, the conditional becomes distributive and acts on each member of the
 union, filtering out anything that isn't a `string`. However, if the generic isn't a
-union (i.e. `{ foo: "bar" }`}), then the conditional will apply to the whole type
+union (i.e. `{ foo: "bar" }`), then the conditional will apply to the whole type
 instead, which results in the type being returned as-is.
 
 So when would this be useful? You might have already honed in on this, but this is

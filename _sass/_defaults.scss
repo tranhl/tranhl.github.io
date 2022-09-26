@@ -108,11 +108,12 @@ code:not([class*="language-"]) {
 
 pre[class*="language-"] {
   margin: 1.6rem 0;
-  padding: 1rem 1.25rem;
+  padding: 0;
   line-height: 1.4rem;
 }
 
 code[class*="language-"] {
+  padding: 1rem 1.25rem;
   position: relative;
   display: inline-block;
   min-width: 100%;
