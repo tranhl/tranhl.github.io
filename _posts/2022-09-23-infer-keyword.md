@@ -9,10 +9,10 @@ category: typescript
 [Conditional types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html)
 allow you to define types that express different types based on the input type:
 
-```ts
+~~~ts
 type Input = string;
 type Output = Input extends string ? string : number;
-```
+~~~
 
 In their simplest form, conditional types don't seem very useful because if you know how
 to read, you can statically determine that `Output` will always be of type `string`!
@@ -21,9 +21,9 @@ This is why you'll almost always see conditional types used in conjunction with
 [generics](https://www.typescriptlang.org/docs/handbook/2/generics.html). If we apply
 generics to the previous example, you'll start to see the utility of conditional types:
 
-```ts
+~~~ts
 type Output<Input> = Input extends string ? string : number;
-```
+~~~
 
 Here, `Output` will default to being a `number` type, but will express a `string` type
 if the input to the generic is also a `string`.
@@ -38,14 +38,14 @@ inferred type in the rest of the conditional. In practice, this allows you to un
 types from wrapped types and use them in conditional types. For example, we can exploit
 this to write a naive implementation for the `Awaited` type:
 
-```ts
+~~~ts
 type Awaited<T> = T extends Promise<infer U>
   ? U // T is of type `Promise`, return the wrapped type
   : T; // T is not of type `Promise`, return it as-is
 
 type Input = Promise<string>;
 type Output = Awaited<Input>; // Will always be of type `string`
-```
+~~~
 
 [Open in Playground](https://www.typescriptlang.org/play?#code/C4TwDgpgBAgg7gQwJbAgEwDwBUB8UC8UWUEAHqgHZoDOUACgE4D2AtktRBkhQGYQNQAqjgBQUKAH4hYqAC4iIkaEhQAkhTABXYAXrM2HDNWANuAc1HLoAeW1adheMlSZ19nEA)
 
